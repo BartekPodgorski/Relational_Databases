@@ -1,0 +1,263 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="30fbb060-d4e4-4fcd-8fe5-0ab579231beb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CLIENT</ID>
+  <Name>CLIENT</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="39adb845-7bc9-4256-be02-6781aa301ace">
+    <DataSourceViewID>Ski Base</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="8b533869-a88f-4ee9-a0e6-a0ca893dda06">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="7a1c8891-f342-4a48-969b-4d6283438206">
+      <ID>ID Client</ID>
+      <Name>ID Client</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b40ccb8f-7b1b-42e4-932e-b679f9c3468c">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3c39bbd9-0e21-4a4c-94a1-4ff29861c759">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>ID_client</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9e0d3d31-eed4-453f-a780-33bd1bbed216">
+          <AttributeID>PIN</AttributeID>
+          <Name>PIN</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90dc1f7f-bd71-409b-88ff-d7844711e893">
+          <AttributeID>Sex</AttributeID>
+          <Name>Sex</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="75854723-3ffd-4b87-99d7-a0f194184342">
+          <AttributeID>Name And Surname</AttributeID>
+          <Name>Name And Surname</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="441193df-5ec1-47ee-abb5-3d06c5b21b9b">
+          <AttributeID>Nationality</AttributeID>
+          <Name>Nationality</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3f8cf2fc-056d-414b-9b9d-9a731dad827f">
+          <AttributeID>Age Category</AttributeID>
+          <Name>Age Category</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dd554a27-f722-4e9b-a76b-26bc7600f8a4">
+          <AttributeID>Skier Skill</AttributeID>
+          <Name>Skier Skill</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ccd4b04a-65d6-49dd-af61-55dfc92a92fd">
+          <AttributeID>Grade</AttributeID>
+          <Name>Grade</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65cea854-0b09-44f6-9751-32cb8a5a5057">
+          <AttributeID>Insertion Date</AttributeID>
+          <Name>Insertion Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7b7193c4-85ae-4399-af76-d80258aa480b">
+          <AttributeID>Deactivation Date</AttributeID>
+          <Name>Deactivation Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="acf68115-598c-48d9-b98f-c91711572d4a">
+      <ID>PIN</ID>
+      <Name>PIN</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f4c4566-39af-4cd9-a410-ff90259a497c">
+          <DataType>WChar</DataType>
+          <DataSize>11</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20b31fa7-5c56-45b8-8047-214d7da5ec7a">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>PIN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fc36980-b290-4386-8ee1-10fbe1a8fa14">
+      <ID>Sex</ID>
+      <Name>Sex</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f736b21-0f6a-4814-8fde-49921bc1ff00">
+          <DataType>WChar</DataType>
+          <DataSize>6</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef2a3d5d-d516-4bbc-9bc2-f5373b9210da">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Sex</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e51a56ba-8fbd-4a66-8f39-a0f8f8087adc">
+      <ID>Name And Surname</ID>
+      <Name>Name And Surname</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4185174-63b9-4cdd-8edf-ecc4958979cb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ae77e5a-4dd0-49cb-bf8b-cc6027367408">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Name_and_surname</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="608adaf6-083e-4fee-8784-8c9ca4963f30">
+      <ID>Nationality</ID>
+      <Name>Nationality</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e66866f2-3653-4681-995e-80ec8cf61e32">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cacde43-7a18-4e48-b409-2f700740625e">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Nationality</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a576363d-9bed-46fd-bf5f-5822488b2b63">
+      <ID>Age Category</ID>
+      <Name>Age Category</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85b79281-720d-4f25-ac5d-74a110fea97d">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="978bab1f-7dab-4a79-97c0-1603c3ee5510">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Age_category</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="51e62959-8941-445d-862d-45bfcc999c44">
+      <ID>Skier Skill</ID>
+      <Name>Skier Skill</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92710611-3cf8-4390-ab2a-98710475246d">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53641e77-4be2-4900-b729-07348f82a8bd">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Skier_skill</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="41a1c0d6-0213-4dee-a302-eb178b8cb165">
+      <ID>Grade</ID>
+      <Name>Grade</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="66a9292f-2fde-4711-b667-7e14ef6715ce">
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eedf0047-f20f-49ad-a07f-0b924d3e30d8">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Grade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="88d40bbb-a77f-4a2b-899e-1e06357ca754">
+      <ID>Insertion Date</ID>
+      <Name>Insertion Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e2d80efd-d9e8-4b7b-a2f3-028aef42a9c3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b56451b5-42cc-4908-9b7b-c6338c6b7b04">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Insertion_date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0555ca91-d1c1-4296-abf3-f8ea633d7784">
+      <ID>Deactivation Date</ID>
+      <Name>Deactivation Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a134ba64-0f4c-4755-adb1-a7d0778cf2da">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a86b10b-a475-46ba-a6ca-0e37e27d42f4">
+            <TableID>dbo_CLIENT</TableID>
+            <ColumnID>Deactivation_date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

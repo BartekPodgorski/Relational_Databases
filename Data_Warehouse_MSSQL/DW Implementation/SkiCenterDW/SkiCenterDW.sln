@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SkiCenterDW", "SkiCenterDW\SkiCenterDW.dwproj", "{67BB6D47-8A76-4AE4-AD45-5895832E70CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67BB6D47-8A76-4AE4-AD45-5895832E70CA}.Development|Default.ActiveCfg = Development
+		{67BB6D47-8A76-4AE4-AD45-5895832E70CA}.Development|Default.Build.0 = Development
+		{67BB6D47-8A76-4AE4-AD45-5895832E70CA}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC1D7048-F9D7-40A6-B53E-8CD7000D4DB6}
+	EndGlobalSection
+EndGlobal

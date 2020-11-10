@@ -1,0 +1,11 @@
+SELECT NON EMPTY { [Measures].[Number of Skipass] } ON COLUMNS, NON EMPTY { ([DATE].[Year].[Year].ALLMEMBERS * [SKIPASS].[Range Of Skipass].[Range Of Skipass].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Ski Base]
+
+WITH MEMBER [Measures].[Max Number of Skipass] AS 'Max( [CLIENT].[Age Category].[Age Category].ALLMEMBERS, [Measures].[Number of Skipass] )'
+SELECT NON EMPTY { [Measures].[Number of Skipass],[Measures].[Max Number of Skipass] } ON COLUMNS,
+NON EMPTY {[CLIENT].[Age Category].[Age Category].ALLMEMBERS} ON ROWS
+FROM [Ski Base]
+
+SELECT NON EMPTY { [Measures].[Number_of_km] } ON COLUMNS,
+NON EMPTY { TopCount ([CLIENT].[Age Category].[Age Category].ALLMEMBERS,1,[Measures].[Number_of_km]) }
+DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Ski Base]
+where [DATE].[Year].&[2020]
